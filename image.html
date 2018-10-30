@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="image.js"></script>
+</head>
+
+<body>
+    <h1>Take a snapshot of the current video stream</h1>
+    Click on the Start WebCam button.
+    <p>
+        <button onclick="startWebcam();">Start WebCam</button>
+        <button onclick="stopWebcam();">Stop WebCam</button>
+        <button onclick="snapshot();">Take Snapshot</button>
+    </p>
+    <video onclick="snapshot(this);" width=400 height=400 id="video" controls autoplay></video>
+    <p>
+
+        Screenshots :
+        <p>
+            <canvas id="myCanvas" width="400" height="350"></canvas>
+</body>
+
+</html>
