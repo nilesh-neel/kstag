@@ -105,7 +105,12 @@ $(function() {
                 readers: [{
                     format: "i2of5_reader",
                     config: {}
-                }]
+                },
+                {
+                    format: "i2of5_reader",
+                    config: {}
+                }
+            ]
             },
             locate: true
         },
